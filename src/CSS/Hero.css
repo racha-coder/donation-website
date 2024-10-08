@@ -60,7 +60,7 @@
 }
 
 .display-images {
-    width: 75%;
+    width: 100vw;
     height: 100vh;
     overflow: hidden;
     position: absolute;
@@ -68,6 +68,10 @@
     top: 0;
     z-index: -100;
     /* border-radius: 15vw 0 0 15vw; */
+
+    img {
+        width: 100%;
+    }
     
     &::before {
         content: '';

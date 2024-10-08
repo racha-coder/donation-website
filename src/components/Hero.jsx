@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import logo from '../assets/logo.png';
 import hero1 from '../assets/hero-1.jpg';
+import hero2 from '../assets/hero-2.jpg';
 import '../CSS/Hero.css';
 
 const images = [
-
+	hero1, hero2,
 ]
 
 const Hero = () => {
@@ -31,9 +32,12 @@ const Hero = () => {
 				</svg>
 			</button>
 			<div className="display-images">
-				<img src={hero1} alt="" />
+				<img src={images[scrollerIndex]} alt="" />
 			</div>
-			<div className="next-button">
+			<div
+				className="next-button"
+				onClick={() => setScrollerIndex(prev => (prev + 1) % images.length)}
+			>
 				<svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="#e8eaed">
 					<path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
 				</svg>
