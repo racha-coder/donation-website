@@ -12,3 +12,8 @@ body {
   display: flex;
   place-items: center;
 }
+
+
+img {
+  width: 100%;
+}
