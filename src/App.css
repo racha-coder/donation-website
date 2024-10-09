@@ -1,0 +1,20 @@
+
+
+
+.next-btn,
+.prev-btn {
+    display: grid;
+    place-items: center;
+    width: 1rem;
+    height: 1rem;
+    padding: 1rem;
+    background-color: #fff2;
+    border-radius: 50%;
+    transition: background-color 600ms linear;
+    position: relative;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #fff4;
+    }
+}
