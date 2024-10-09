@@ -43,7 +43,7 @@ function Contact() {
 
         setErrors(formErrors);
 
-        // If no errors, log form data
+       
         if (Object.keys(formErrors).length === 0) {
             console.log("Form Data Submitted:", formData);
             alert("Form Submitted Successfully!");
@@ -55,7 +55,7 @@ function Contact() {
             <div style={{ maxWidth: "400px", margin: "auto", padding: "20px" }}>
                 <h2>Login Form</h2>
                 <form onSubmit={handleSubmit}>
-                    {/* Name Field */}
+                    
                     <div>
                         <label>Name:</label>
                         <input
@@ -68,7 +68,7 @@ function Contact() {
                         {errors.name && <p style={{ color: "red" }}>{errors.name}</p>}
                     </div>
 
-                    {/* Email Field */}
+                    
                     <div>
                         <label>Email:</label>
                         <input
@@ -81,7 +81,7 @@ function Contact() {
                         {errors.email && <p style={{ color: "red" }}>{errors.email}</p>}
                     </div>
 
-                    {/* Contact Field */}
+                  
                     <div>
                         <label>Contact Number:</label>
                         <input
@@ -94,7 +94,7 @@ function Contact() {
                         {errors.contact && <p style={{ color: "red" }}>{errors.contact}</p>}
                     </div>
 
-                    {/* Address Field */}
+                   
                     <div>
                         <label>Address:</label>
                         <textarea
@@ -118,3 +118,5 @@ function Contact() {
 }
 
 export default Contact;
+
+
