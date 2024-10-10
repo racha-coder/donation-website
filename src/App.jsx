@@ -2,7 +2,6 @@ import React from 'react'
 import Hero from './components/Hero';
 import Contact from './components/Contact';
 import Testimonials from './components/Testimonials';
-import './App.css'
 import DonationProcess from './components/DonationProcess';
 import './App.css'
 
