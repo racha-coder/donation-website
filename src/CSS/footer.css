@@ -1,0 +1,80 @@
+footer {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem max(15vw, 3rem) 3rem;
+    font-size: .75rem;
+    color: #fff9;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+
+        &:hover {
+            color: #fffc;
+        }
+    }
+
+    .footer-column-heading {
+        color: #fffc;
+    }
+}
+
+.logo-img {
+    width: 7rem;
+    margin-bottom: 3rem;
+}
+
+.footer-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-form input {
+    border: none;
+    border-bottom: .25px solid;
+    border-radius: 0;
+    padding: .5rem 0;
+    width: min(15vw, 300px);
+    outline: none;
+    background-color: transparent;
+
+    &:hover {
+        box-shadow: none;
+    }
+}
+
+.footer-form button {
+    background-color: #fffe;
+    font-size: .75rem;
+    font-weight: 700;
+    color: #000;
+    width: fit-content;
+    padding: .5rem 2rem;
+
+    &:hover {
+        background-color: #fff7;
+    }
+}
+
+section.general ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.get-in-touch {
+    .company-email {
+        display: flex;
+        gap: .75rem;
+        align-items: center;
+    }
+
+    .social-links {
+        margin-top: 2rem;
+        display: flex;
+        gap: 1rem;
+    }
+}
