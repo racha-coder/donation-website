@@ -1,5 +1,6 @@
 import React from 'react'
 import Hero from './components/Hero';
+import Aboutus from './components/Aboutus';
 import Contact from './components/Contact';
 import Testimonials from './components/Testimonials';
 import DonationProcess from './components/DonationProcess';
@@ -11,6 +12,7 @@ const App = () => {
     <div>
       {/* Write your code here */}
       <Hero />
+      <Aboutus/>
       <DonationProcess  />
       <Testimonials />
       <Contact />
