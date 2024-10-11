@@ -21,7 +21,10 @@
     border-radius: .25vw;
     font-size: larger;
     color: var(--bgc-color);
-    background-color: color-mix(in srgb, var(--bgc-color) 30%, #000 70%);
+    /* background-color: color-mix(in srgb, var(--bgc-color) 30%, #000 70%); */
+    /* background-color: hsl(240, 50%, var(--percent)); */
+    /* background-color: hsl(240, 100%, 50%); */
+    background-image: linear-gradient(to bottom right, hsl(240, 50%, var(--percent)) 70%, hsl(260, 50%, calc(var(--percent) + 15%)));
 }
 
 .step:nth-of-type(even) {
